@@ -44,7 +44,7 @@ class _ConfirmOtpPageState extends State<ConfirmOtpPage> {
   @override
   Widget build(BuildContext context) {
     Widget title = Text(
-      'Confirm your OTP',
+      'Confirmar el OTP',
       style: TextStyle(
           color: Colors.white,
           fontSize: 34.0,
@@ -61,7 +61,7 @@ class _ConfirmOtpPageState extends State<ConfirmOtpPage> {
     Widget subTitle = Padding(
         padding: const EdgeInsets.only(right: 56.0),
         child: Text(
-          'Please wait, we are confirming your OTP',
+          'Por favor espere, confirmando su OTP',
           style: TextStyle(
             color: Colors.white,
             fontSize: 16.0,
@@ -78,7 +78,7 @@ class _ConfirmOtpPageState extends State<ConfirmOtpPage> {
           width: MediaQuery.of(context).size.width / 2,
           height: 80,
           child: Center(
-              child: new Text("Verify",
+              child: new Text("Verificar",
                   style: const TextStyle(
                       color: const Color(0xfffefefe),
                       fontWeight: FontWeight.w600,
@@ -124,7 +124,7 @@ class _ConfirmOtpPageState extends State<ConfirmOtpPage> {
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
         Text(
-          "Resend again after ",
+          "Reenviar de nuevo después -",
           style: TextStyle(
             fontStyle: FontStyle.italic,
             color: Color.fromRGBO(255, 255, 255, 0.5),
@@ -134,7 +134,7 @@ class _ConfirmOtpPageState extends State<ConfirmOtpPage> {
         InkWell(
           onTap: () {},
           child: Text(
-            '0:39',
+            ' 0:39',
             style: TextStyle(
               color: Colors.white,
               fontWeight: FontWeight.bold,
@@ -150,7 +150,8 @@ class _ConfirmOtpPageState extends State<ConfirmOtpPage> {
       child: Container(
         decoration: BoxDecoration(
             image: DecorationImage(
-                image: AssetImage('assets/background.jpg'), fit: BoxFit.cover)),
+                image: AssetImage('assets/background_1.jpg'),
+                fit: BoxFit.cover)),
         child: Container(
           decoration: BoxDecoration(color: transparentYellow),
           child: Scaffold(
@@ -178,8 +179,10 @@ class _ConfirmOtpPageState extends State<ConfirmOtpPage> {
                             highlightColor: Colors.white,
                             highlightAnimation: true,
                             highlightAnimationBeginColor: Colors.white,
-                            highlightAnimationEndColor: Theme.of(context).primaryColor,
-                            pinTextAnimatedSwitcherDuration: Duration(milliseconds: 500),
+                            highlightAnimationEndColor:
+                                Theme.of(context).primaryColor,
+                            pinTextAnimatedSwitcherDuration:
+                                Duration(milliseconds: 500),
                             wrapAlignment: WrapAlignment.center,
                             hasTextBorderColor: Colors.transparent,
                             highlightPinBoxColor: Colors.white,

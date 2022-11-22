@@ -1,9 +1,7 @@
-
 import 'package:ecommerce_int2/app_properties.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:country_code_picker/country_code_picker.dart';
-
 
 import 'confirm_otp_page.dart';
 
@@ -13,24 +11,23 @@ class ForgotPasswordPage extends StatefulWidget {
 }
 
 class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
-  TextEditingController phoneNumber = TextEditingController(text: '46834683');
+  TextEditingController phoneNumber = TextEditingController(text: '954971444');
 
   GlobalKey prefixKey = GlobalKey();
   double prefixWidth = 0;
 
   Widget prefix() {
     return Container(
-      key: prefixKey,
-      //padding: EdgeInsets.fromLTRB(12.0, 20.0, 12.0, 12.0),
-      margin: EdgeInsets.only(right: 4.0),
-      decoration: BoxDecoration(
-          border: Border(bottom: BorderSide(color: Colors.black, width: 0.5))),
-      child: CountryCodePicker(
-        initialSelection: 'GT',
-
-        favorite: ['+1','US'],
-      )
-    );
+        key: prefixKey,
+        //padding: EdgeInsets.fromLTRB(12.0, 20.0, 12.0, 12.0),
+        margin: EdgeInsets.only(right: 4.0),
+        decoration: BoxDecoration(
+            border:
+                Border(bottom: BorderSide(color: Colors.black, width: 0.5))),
+        child: CountryCodePicker(
+          initialSelection: 'PE',
+          favorite: ['+51', 'PE'],
+        ));
   }
 
   @override
@@ -38,13 +35,13 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
     Widget background = Container(
       decoration: BoxDecoration(
         image: DecorationImage(
-            image: AssetImage('assets/background.jpg'), fit: BoxFit.cover),
+            image: AssetImage('assets/background_1.jpg'), fit: BoxFit.cover),
       ),
       foregroundDecoration: BoxDecoration(color: transparentYellow),
     );
 
     Widget title = Text(
-      'Forgot your Password?',
+      'Olvidaste tu contraseña?',
       style: TextStyle(
           color: Colors.white,
           fontSize: 34.0,
@@ -61,7 +58,7 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
     Widget subTitle = Padding(
         padding: const EdgeInsets.only(right: 56.0),
         child: Text(
-          'Enter your registered mobile number to get the OTP',
+          'Ingrese su número de móvil registrado para obtener la OTP',
           style: TextStyle(
             color: Colors.white,
             fontSize: 16.0,
@@ -73,13 +70,14 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
       bottom: 40,
       child: InkWell(
         onTap: () {
-          Navigator.of(context).push(MaterialPageRoute(builder:(_)=>ConfirmOtpPage()));
+          Navigator.of(context)
+              .push(MaterialPageRoute(builder: (_) => ConfirmOtpPage()));
         },
         child: Container(
           width: MediaQuery.of(context).size.width / 2,
           height: 80,
           child: Center(
-              child: new Text("Send OTP",
+              child: new Text("Enviar OTP",
                   style: const TextStyle(
                       color: const Color(0xfffefefe),
                       fontWeight: FontWeight.w600,
@@ -113,7 +111,7 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
           Container(
             height: 100,
             width: MediaQuery.of(context).size.width,
-            padding: const EdgeInsets.only(left: 32.0, right: 12.0,bottom: 30),
+            padding: const EdgeInsets.only(left: 32.0, right: 12.0, bottom: 30),
             decoration: BoxDecoration(
                 color: Color.fromRGBO(255, 255, 255, 0.8),
                 borderRadius: BorderRadius.only(
@@ -147,7 +145,7 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              "Didn't receive the OPT? ",
+              "No recibió el OPT? ",
               style: TextStyle(
                 fontStyle: FontStyle.italic,
                 color: Color.fromRGBO(255, 255, 255, 0.5),
@@ -157,7 +155,7 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
             InkWell(
               onTap: () {},
               child: Text(
-                'Resend again',
+                'Reenviar de nuevo',
                 style: TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
@@ -170,16 +168,12 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
     return GestureDetector(
       onTap: () => FocusScope.of(context).requestFocus(new FocusNode()),
       child: Container(
-        decoration:BoxDecoration(
-            image:DecorationImage(
-                image: AssetImage('assets/background.jpg'),
-                fit: BoxFit.cover
-            )
-        ),
+        decoration: BoxDecoration(
+            image: DecorationImage(
+                image: AssetImage('assets/background_1.jpg'),
+                fit: BoxFit.cover)),
         child: Container(
-          decoration: BoxDecoration(
-            color:transparentYellow
-          ),
+          decoration: BoxDecoration(color: transparentYellow),
           child: Scaffold(
             appBar: AppBar(
               backgroundColor: Colors.transparent,
@@ -211,5 +205,3 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
     );
   }
 }
-
-

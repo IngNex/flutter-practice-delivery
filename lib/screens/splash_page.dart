@@ -41,7 +41,7 @@ class _SplashScreenState extends State<SplashScreen>
     return Container(
       decoration: BoxDecoration(
           image: DecorationImage(
-              image: AssetImage('assets/background.jpg'), fit: BoxFit.cover)),
+              image: AssetImage('assets/background_1.jpg'), fit: BoxFit.cover)),
       child: Container(
         decoration: BoxDecoration(color: transparentYellow),
         child: SafeArea(
@@ -51,7 +51,7 @@ class _SplashScreenState extends State<SplashScreen>
                 Expanded(
                   child: Opacity(
                       opacity: opacity.value,
-                      child: new Image.asset('assets/logo.png')),
+                      child: new Image.asset('assets/janiostore.png')),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
@@ -61,7 +61,7 @@ class _SplashScreenState extends State<SplashScreen>
                         children: [
                           TextSpan(text: 'Powered by '),
                           TextSpan(
-                              text: 'int2.io',
+                              text: '©Ingnex',
                               style: TextStyle(fontWeight: FontWeight.bold))
                         ]),
                   ),

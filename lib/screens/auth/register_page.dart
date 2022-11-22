@@ -1,4 +1,3 @@
-
 import 'package:ecommerce_int2/app_properties.dart';
 import 'package:flutter/material.dart';
 
@@ -11,17 +10,16 @@ class RegisterPage extends StatefulWidget {
 
 class _RegisterPageState extends State<RegisterPage> {
   TextEditingController email =
-      TextEditingController(text: 'example@email.com');
+      TextEditingController(text: 'registrar@email.com');
 
   TextEditingController password = TextEditingController(text: '12345678');
 
   TextEditingController cmfPassword = TextEditingController(text: '12345678');
 
-
   @override
   Widget build(BuildContext context) {
     Widget title = Text(
-      'Glad To Meet You',
+      'Encantado de Conocerte',
       style: TextStyle(
           color: Colors.white,
           fontSize: 34.0,
@@ -38,7 +36,7 @@ class _RegisterPageState extends State<RegisterPage> {
     Widget subTitle = Padding(
         padding: const EdgeInsets.only(right: 56.0),
         child: Text(
-          'Create your new account for future uses.',
+          'Cree su nueva cuenta para usos futuros.',
           style: TextStyle(
             color: Colors.white,
             fontSize: 16.0,
@@ -57,7 +55,7 @@ class _RegisterPageState extends State<RegisterPage> {
           width: MediaQuery.of(context).size.width / 2,
           height: 80,
           child: Center(
-              child: new Text("Register",
+              child: new Text("Registrar",
                   style: const TextStyle(
                       color: const Color(0xfffefefe),
                       fontWeight: FontWeight.w600,
@@ -127,7 +125,7 @@ class _RegisterPageState extends State<RegisterPage> {
     Widget socialRegister = Column(
       children: <Widget>[
         Text(
-          'You can sign in with',
+          'Puedes iniciar sesión con',
           style: TextStyle(
               fontSize: 12.0, fontStyle: FontStyle.italic, color: Colors.white),
         ),
@@ -149,55 +147,50 @@ class _RegisterPageState extends State<RegisterPage> {
     );
 
     return Scaffold(
-
-              body: Stack(
-                children: <Widget>[
-                  Container(
-                    decoration: BoxDecoration(
-                        image: DecorationImage(image: AssetImage('assets/background.jpg'),
-                            fit: BoxFit.cover)
-                    ),
-                  ),
-                  Container(
-                    decoration: BoxDecoration(
-                      color: transparentYellow,
-
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 28.0),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: <Widget>[
-                        Spacer(flex:3),
-                        title,
-                        Spacer(),
-
-                        subTitle,
-                        Spacer(flex:2),
-
-                        registerForm,
-                        Spacer(flex:2),
-                        Padding(
-                            padding: EdgeInsets.only(bottom: 20), child: socialRegister)
-                      ],
-                    ),
-                  ),
-
-                  Positioned(
-                    top: 35,
-                    left: 5,
-                    child: IconButton(
-                      color: Colors.white,
-                      icon: Icon(Icons.arrow_back),
-                      onPressed: () {
-                        Navigator.pop(context);
-                      },
-                    ),
-                  )
-                ],
-              ),
-            );
+      body: Stack(
+        children: <Widget>[
+          Container(
+            decoration: BoxDecoration(
+                image: DecorationImage(
+                    image: AssetImage('assets/background_1.jpg'),
+                    fit: BoxFit.cover)),
+          ),
+          Container(
+            decoration: BoxDecoration(
+              color: transparentYellow,
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 28.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: <Widget>[
+                Spacer(flex: 3),
+                title,
+                Spacer(),
+                subTitle,
+                Spacer(flex: 2),
+                registerForm,
+                Spacer(flex: 2),
+                Padding(
+                    padding: EdgeInsets.only(bottom: 20), child: socialRegister)
+              ],
+            ),
+          ),
+          Positioned(
+            top: 35,
+            left: 5,
+            child: IconButton(
+              color: Colors.white,
+              icon: Icon(Icons.arrow_back),
+              onPressed: () {
+                Navigator.pop(context);
+              },
+            ),
+          )
+        ],
+      ),
+    );
   }
 }

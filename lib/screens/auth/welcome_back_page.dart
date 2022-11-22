@@ -1,24 +1,22 @@
-
 import 'package:ecommerce_int2/app_properties.dart';
 import 'package:flutter/material.dart';
 
 import 'register_page.dart';
 
-class                            WelcomeBackPage extends StatefulWidget {
+class WelcomeBackPage extends StatefulWidget {
   @override
   _WelcomeBackPageState createState() => _WelcomeBackPageState();
 }
 
 class _WelcomeBackPageState extends State<WelcomeBackPage> {
-  TextEditingController email =
-      TextEditingController(text: 'example@email.com');
+  TextEditingController email = TextEditingController(text: 'ingnex@gmail.com');
 
   TextEditingController password = TextEditingController(text: '12345678');
 
   @override
   Widget build(BuildContext context) {
     Widget welcomeBack = Text(
-      'Welcome Back Roberto,',
+      'Bievendio a JanioMarcos,',
       style: TextStyle(
           color: Colors.white,
           fontSize: 34.0,
@@ -35,7 +33,7 @@ class _WelcomeBackPageState extends State<WelcomeBackPage> {
     Widget subTitle = Padding(
         padding: const EdgeInsets.only(right: 56.0),
         child: Text(
-          'Login to your account using\nMobile number',
+          'Inicie sesión en su cuenta usando\nNúmero de móvil',
           style: TextStyle(
             color: Colors.white,
             fontSize: 16.0,
@@ -54,7 +52,7 @@ class _WelcomeBackPageState extends State<WelcomeBackPage> {
           width: MediaQuery.of(context).size.width / 2,
           height: 80,
           child: Center(
-              child: new Text("Log In",
+              child: new Text("Ingresar",
                   style: const TextStyle(
                       color: const Color(0xfffefefe),
                       fontWeight: FontWeight.w600,
@@ -126,7 +124,7 @@ class _WelcomeBackPageState extends State<WelcomeBackPage> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           Text(
-            'Forgot your password? ',
+            'Olvidaste tu contraseña? ',
             style: TextStyle(
               fontStyle: FontStyle.italic,
               color: Color.fromRGBO(255, 255, 255, 0.5),
@@ -136,7 +134,7 @@ class _WelcomeBackPageState extends State<WelcomeBackPage> {
           InkWell(
             onTap: () {},
             child: Text(
-              'Reset password',
+              'Reiniciar contraseña',
               style: TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.bold,
@@ -149,20 +147,17 @@ class _WelcomeBackPageState extends State<WelcomeBackPage> {
     );
 
     return Scaffold(
-
       body: Stack(
         children: <Widget>[
-
           Container(
             decoration: BoxDecoration(
-              image: DecorationImage(image: AssetImage('assets/background.jpg'),
-                  fit: BoxFit.cover)
-            ),
+                image: DecorationImage(
+                    image: AssetImage('assets/background_1.jpg'),
+                    fit: BoxFit.cover)),
           ),
           Container(
             decoration: BoxDecoration(
-                color: transparentYellow,
-
+              color: transparentYellow,
             ),
           ),
           Padding(
