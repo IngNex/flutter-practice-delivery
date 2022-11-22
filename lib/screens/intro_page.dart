@@ -43,7 +43,7 @@ class _IntroPageState extends State<IntroPage> {
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 32),
                       child: Text(
-                        'Get Any Thing Online',
+                        'Obtenga un licor por línea',
                         textAlign: TextAlign.right,
                         style: TextStyle(
                             fontWeight: FontWeight.bold, fontSize: 16),
@@ -53,7 +53,7 @@ class _IntroPageState extends State<IntroPage> {
                       padding: const EdgeInsets.symmetric(
                           horizontal: 32, vertical: 16.0),
                       child: Text(
-                        'You can buy anything ranging from digital products to hardware within few clicks.',
+                        'Puede comprar algunos licores, desde vinos, pisco hasta whisky, con unos pocos clics.',
                         textAlign: TextAlign.right,
                         style: TextStyle(color: Colors.grey, fontSize: 12.0),
                       ),
@@ -74,7 +74,7 @@ class _IntroPageState extends State<IntroPage> {
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 32),
                       child: Text(
-                        'Shipping to anywhere ',
+                        'Envío a tu disponibilidad ',
                         textAlign: TextAlign.right,
                         style: TextStyle(
                             fontWeight: FontWeight.bold, fontSize: 16),
@@ -84,7 +84,7 @@ class _IntroPageState extends State<IntroPage> {
                       padding: const EdgeInsets.symmetric(
                           horizontal: 32, vertical: 16.0),
                       child: Text(
-                        'We will ship to anywhere in the world, With 30 day 100% money back policy.',
+                        'Enviaremos a todo Mala, con una política de devolución del 100% del dinero de 30 días.',
                         textAlign: TextAlign.right,
                         style: TextStyle(color: Colors.grey, fontSize: 12.0),
                       ),
@@ -169,7 +169,7 @@ class _IntroPageState extends State<IntroPage> {
                           opacity: pageIndex != 2 ? 1.0 : 0.0,
                           child: TextButton(
                             child: Text(
-                              'SKIP',
+                              'PASAR',
                               style: TextStyle(
                                   color: Colors.black,
                                   fontWeight: FontWeight.bold,
@@ -185,7 +185,7 @@ class _IntroPageState extends State<IntroPage> {
                         pageIndex != 2
                             ? TextButton(
                                 child: Text(
-                                  'NEXT',
+                                  'SIGUIENTE',
                                   style: TextStyle(
                                       color: Colors.black,
                                       fontWeight: FontWeight.bold,
@@ -200,7 +200,7 @@ class _IntroPageState extends State<IntroPage> {
                               )
                             : TextButton(
                                 child: Text(
-                                  'FINISH',
+                                  'FINALIZAR',
                                   style: TextStyle(
                                       color: Colors.black,
                                       fontWeight: FontWeight.bold,
