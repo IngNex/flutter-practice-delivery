@@ -36,7 +36,7 @@ class _IntroPageState extends State<IntroPage> {
                   children: <Widget>[
                     Center(
                       child: Image.asset(
-                        'assets/firstScreen.png',
+                        'assets/screenOne.png',
                         height: 200,
                         width: 200,
                       ),
@@ -56,7 +56,10 @@ class _IntroPageState extends State<IntroPage> {
                       child: Text(
                         'Puede comprar algunos licores, desde vinos, pisco hasta whisky, con unos pocos clics.',
                         textAlign: TextAlign.right,
-                        style: TextStyle(color: Colors.grey, fontSize: 12.0),
+                        style: TextStyle(
+                            color: Colors.lightBlue,
+                            fontSize: 12.0,
+                            fontWeight: FontWeight.bold),
                       ),
                     ),
                   ],
@@ -67,7 +70,7 @@ class _IntroPageState extends State<IntroPage> {
                   children: <Widget>[
                     Center(
                       child: Image.asset(
-                        'assets/secondScreen.png',
+                        'assets/screenTwo.png',
                         height: 200,
                         width: 200,
                       ),
@@ -87,7 +90,10 @@ class _IntroPageState extends State<IntroPage> {
                       child: Text(
                         'Enviaremos a todo Mala, con una política de devolución del 100% del dinero de 30 días.',
                         textAlign: TextAlign.right,
-                        style: TextStyle(color: Colors.grey, fontSize: 12.0),
+                        style: TextStyle(
+                            color: Colors.lightBlue,
+                            fontSize: 12.0,
+                            fontWeight: FontWeight.bold),
                       ),
                     ),
                   ],
@@ -98,7 +104,7 @@ class _IntroPageState extends State<IntroPage> {
                   children: <Widget>[
                     Center(
                       child: Image.asset(
-                        'assets/thirdScreen.png',
+                        'assets/screenThree.png',
                         height: 200,
                         width: 200,
                       ),
@@ -106,7 +112,7 @@ class _IntroPageState extends State<IntroPage> {
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 32),
                       child: Text(
-                        'On-time delivery',
+                        'Delivery a tiempo',
                         textAlign: TextAlign.right,
                         style: TextStyle(
                             fontWeight: FontWeight.bold, fontSize: 16),
@@ -116,9 +122,12 @@ class _IntroPageState extends State<IntroPage> {
                       padding: const EdgeInsets.symmetric(
                           horizontal: 32, vertical: 16.0),
                       child: Text(
-                        'You can track your product with our powerful tracking service.',
+                        'Puede rastrear su producto con nuestro poderoso servicio de rastreo.',
                         textAlign: TextAlign.right,
-                        style: TextStyle(color: Colors.grey, fontSize: 12.0),
+                        style: TextStyle(
+                            color: Colors.lightBlue,
+                            fontSize: 12.0,
+                            fontWeight: FontWeight.bold),
                       ),
                     ),
                   ],
