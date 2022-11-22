@@ -11,7 +11,8 @@ class ForgotPasswordPage extends StatefulWidget {
 }
 
 class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
-  TextEditingController phoneNumber = TextEditingController(text: '954971444');
+  TextEditingController phoneNumber =
+      TextEditingController(text: 'ingresa numero');
 
   GlobalKey prefixKey = GlobalKey();
   double prefixWidth = 0;
@@ -86,9 +87,9 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
           decoration: BoxDecoration(
               gradient: LinearGradient(
                   colors: [
-                    Color.fromRGBO(236, 60, 3, 1),
-                    Color.fromRGBO(234, 60, 3, 1),
-                    Color.fromRGBO(216, 78, 16, 1),
+                    Color.fromARGB(255, 236, 139, 3),
+                    Color.fromARGB(255, 234, 153, 3),
+                    Color.fromARGB(255, 216, 143, 16),
                   ],
                   begin: FractionalOffset.topCenter,
                   end: FractionalOffset.bottomCenter),

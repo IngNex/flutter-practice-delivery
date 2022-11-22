@@ -16,7 +16,7 @@ class _WelcomeBackPageState extends State<WelcomeBackPage> {
   @override
   Widget build(BuildContext context) {
     Widget welcomeBack = Text(
-      'Bievendio a JanioMarcos,',
+      'Bievendio a JanioStore,',
       style: TextStyle(
           color: Colors.white,
           fontSize: 34.0,
@@ -61,9 +61,9 @@ class _WelcomeBackPageState extends State<WelcomeBackPage> {
           decoration: BoxDecoration(
               gradient: LinearGradient(
                   colors: [
-                    Color.fromRGBO(236, 60, 3, 1),
-                    Color.fromRGBO(234, 60, 3, 1),
-                    Color.fromRGBO(216, 78, 16, 1),
+                    Color.fromARGB(255, 236, 139, 3),
+                    Color.fromARGB(255, 234, 153, 3),
+                    Color.fromARGB(255, 216, 143, 16),
                   ],
                   begin: FractionalOffset.topCenter,
                   end: FractionalOffset.bottomCenter),

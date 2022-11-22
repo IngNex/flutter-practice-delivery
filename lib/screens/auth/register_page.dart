@@ -19,7 +19,7 @@ class _RegisterPageState extends State<RegisterPage> {
   @override
   Widget build(BuildContext context) {
     Widget title = Text(
-      'Encantado de Conocerte',
+      'Encantado de Conocerte...',
       style: TextStyle(
           color: Colors.white,
           fontSize: 34.0,
