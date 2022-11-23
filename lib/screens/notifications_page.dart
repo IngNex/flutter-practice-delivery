@@ -17,7 +17,7 @@ class NotificationsPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
                   Text(
-                    'Notification',
+                    'Notificaciones',
                     style: TextStyle(
                       color: darkGrey,
                       fontSize: 22,
@@ -43,7 +43,7 @@ class NotificationsPage extends StatelessWidget {
                             children: <Widget>[
                               CircleAvatar(
                                 backgroundImage: AssetImage(
-                                  'assets/background.jpg',
+                                  'assets/IngNex.jpg',
                                 ),
                                 maxRadius: 24,
                               ),
@@ -59,12 +59,12 @@ class NotificationsPage extends StatelessWidget {
                                         ),
                                         children: [
                                           TextSpan(
-                                              text: 'Sai Sankar Ram',
+                                              text: 'Maicol Rodriguez',
                                               style: TextStyle(
                                                 fontWeight: FontWeight.bold,
                                               )),
                                           TextSpan(
-                                            text: ' Requested for ',
+                                            text: ' Requerido para ',
                                           ),
                                           TextSpan(
                                             text: '\$45.25',
@@ -91,7 +91,7 @@ class NotificationsPage extends StatelessWidget {
                                   Padding(
                                     padding: const EdgeInsets.symmetric(
                                         horizontal: 8.0),
-                                    child: Text('Pay',
+                                    child: Text('Pagar',
                                         style:
                                             TextStyle(color: Colors.blue[700])),
                                   )
@@ -107,7 +107,7 @@ class NotificationsPage extends StatelessWidget {
                                   Padding(
                                     padding: const EdgeInsets.symmetric(
                                         horizontal: 8.0),
-                                    child: Text('Decline',
+                                    child: Text('Cancelar',
                                         style: TextStyle(
                                             color: Color(0xffF94D4D))),
                                   )
@@ -131,7 +131,7 @@ class NotificationsPage extends StatelessWidget {
                             children: <Widget>[
                               CircleAvatar(
                                 backgroundImage: AssetImage(
-                                  'assets/background.jpg',
+                                  'assets/IngNex.jpg',
                                 ),
                                 maxRadius: 24,
                               ),
@@ -147,15 +147,15 @@ class NotificationsPage extends StatelessWidget {
                                         ),
                                         children: [
                                           TextSpan(
-                                              text: 'Sai Sankar Ram',
+                                              text: 'Maicol Rodriguez',
                                               style: TextStyle(
                                                 fontWeight: FontWeight.bold,
                                               )),
                                           TextSpan(
-                                            text: ' Send You ',
+                                            text: ' Se enviara ',
                                           ),
                                           TextSpan(
-                                            text: '\$45.25',
+                                            text: '\$80.25',
                                             style: TextStyle(
                                               fontWeight: FontWeight.bold,
                                             ),
@@ -179,7 +179,7 @@ class NotificationsPage extends StatelessWidget {
                                   Padding(
                                     padding: const EdgeInsets.symmetric(
                                         horizontal: 8.0),
-                                    child: Text('Accept',
+                                    child: Text('Aceptar',
                                         style:
                                             TextStyle(color: Colors.blue[700])),
                                   )
@@ -195,7 +195,7 @@ class NotificationsPage extends StatelessWidget {
                                   Padding(
                                     padding: const EdgeInsets.symmetric(
                                         horizontal: 8.0),
-                                    child: Text('Decline',
+                                    child: Text('Cancelar',
                                         style: TextStyle(
                                             color: Color(0xffF94D4D))),
                                   )
@@ -242,20 +242,19 @@ class NotificationsPage extends StatelessWidget {
                                         height: 80,
                                         width: 80,
                                         child: Image.asset(
-                                            'assets/headphones.png')),
+                                            'assets/semi_rose.png')),
                                   )
                                 ]),
                               ),
                               Flexible(
                                 child: Column(children: [
-                                  Text(
-                                      'Boat Rockerz 350 On-Ear Bluetooth Headphones',
+                                  Text('Vino Tabernero Gran Rosé',
                                       style: TextStyle(
                                           fontWeight: FontWeight.bold,
                                           fontSize: 10)),
-                                  SizedBox(height:4.0),
+                                  SizedBox(height: 4.0),
                                   Text(
-                                      'Your package has been delivered. Thanks for shopping!',
+                                      'Su paquete ha sido entregado. ¡Gracias por comprar!',
                                       style: TextStyle(
                                           color: Colors.grey, fontSize: 10))
                                 ]),
@@ -276,7 +275,7 @@ class NotificationsPage extends StatelessWidget {
                                 child: Align(
                                     alignment: Alignment.centerRight,
                                     child: Text(
-                                      'Share your feedback',
+                                      'Comparte tus comentarios',
                                       style: TextStyle(
                                           color: Colors.white,
                                           fontWeight: FontWeight.bold,
@@ -322,20 +321,19 @@ class NotificationsPage extends StatelessWidget {
                                         height: 80,
                                         width: 80,
                                         child: Image.asset(
-                                            'assets/headphones_3.png')),
+                                            'assets/seco_blanco.png')),
                                   )
                                 ]),
                               ),
                               Flexible(
                                 child: Column(children: [
-                                  Text(
-                                      'Boat Rockerz 440 On-Ear Bluetooth Headphones',
+                                  Text('Vino Gran Blanco Fina Reserva',
                                       style: TextStyle(
                                           fontWeight: FontWeight.bold,
                                           fontSize: 10)),
-                                  SizedBox(height:4.0),
+                                  SizedBox(height: 4.0),
                                   Text(
-                                      'Your package has been dispatched. You can keep track of your product.',
+                                      'Su paquete ha sido enviado. Puede realizar un seguimiento de su producto.',
                                       style: TextStyle(
                                           color: Colors.grey, fontSize: 10))
                                 ]),
@@ -344,7 +342,8 @@ class NotificationsPage extends StatelessWidget {
                           ),
                           InkWell(
                             onTap: () => Navigator.of(context).push(
-                                MaterialPageRoute(builder: (_) => TrackingPage())),
+                                MaterialPageRoute(
+                                    builder: (_) => TrackingPage())),
                             child: Container(
                                 padding: const EdgeInsets.all(14.0),
                                 decoration: BoxDecoration(
@@ -355,7 +354,7 @@ class NotificationsPage extends StatelessWidget {
                                 child: Align(
                                     alignment: Alignment.centerRight,
                                     child: Text(
-                                      'Track the product',
+                                      'Seguimiento del producto',
                                       style: TextStyle(
                                           color: Colors.white,
                                           fontWeight: FontWeight.bold,

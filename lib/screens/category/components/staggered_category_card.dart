@@ -82,7 +82,7 @@ class CategoryCard extends StatelessWidget {
                 padding:
                     const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
                 child: Text(
-                  'View more',
+                  'Ver mas',
                   style: TextStyle(color: end, fontWeight: FontWeight.bold),
                 ),
               )

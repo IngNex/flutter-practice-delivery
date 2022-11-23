@@ -13,40 +13,40 @@ class CategoryListPage extends StatefulWidget {
 class _CategoryListPageState extends State<CategoryListPage> {
   List<Category> categories = [
     Category(
-      Color(0xffFCE183),
-      Color(0xffF68D7F),
-      'Gadgets',
-      'assets/jeans_5.png',
+      Color(0xffAF2D68),
+      Color(0xff632376),
+      'Vinos',
+      'assets/gran_tinto_fr.png',
     ),
     Category(
       Color(0xffF749A2),
       Color(0xffFF7375),
-      'Clothes',
-      'assets/jeans_5.png',
+      'Piscos',
+      'assets/pisco_verde_italia.png',
+    ),
+    Category(
+      Color(0xffFCE183),
+      Color(0xffF68D7F),
+      'Whisky',
+      'assets/Black-label.png',
     ),
     Category(
       Color(0xff00E9DA),
       Color(0xff5189EA),
-      'Fashion',
-      'assets/jeans_5.png',
-    ),
-    Category(
-      Color(0xffAF2D68),
-      Color(0xff632376),
-      'Home',
-      'assets/jeans_5.png',
+      'Espumantes',
+      'assets/espumante_muscat_rosso.png',
     ),
     Category(
       Color(0xff36E892),
       Color(0xff33B2B9),
-      'Beauty',
-      'assets/jeans_5.png',
+      'Ron',
+      'assets/Whisky-Something-Special.png',
     ),
     Category(
       Color(0xffF123C4),
       Color(0xff668CEA),
-      'Appliances',
-      'assets/jeans_5.png',
+      'Vodka',
+      'assets/Whisky-Johnnie-Walkerl.png',
     ),
   ];
 
@@ -74,7 +74,7 @@ class _CategoryListPageState extends State<CategoryListPage> {
               child: Padding(
                 padding: EdgeInsets.symmetric(vertical: 16.0),
                 child: Text(
-                  'Category List',
+                  'Categorias',
                   style: TextStyle(
                     color: darkGrey,
                     fontSize: 22,
@@ -93,7 +93,7 @@ class _CategoryListPageState extends State<CategoryListPage> {
                 controller: searchController,
                 decoration: InputDecoration(
                     border: InputBorder.none,
-                    hintText: 'Search',
+                    hintText: 'Buscar',
                     prefixIcon: SvgPicture.asset(
                       'assets/icons/search_icon.svg',
                       fit: BoxFit.scaleDown,
