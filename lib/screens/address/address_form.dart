@@ -18,7 +18,8 @@ class AddAddressForm extends StatelessWidget {
             ),
             child: TextField(
               decoration: InputDecoration(
-                  border: InputBorder.none, hintText: 'Flat Number/House Number'),
+                  border: InputBorder.none,
+                  hintText: 'Número de piso/Número de casa'),
             ),
           ),
           Container(
@@ -29,7 +30,7 @@ class AddAddressForm extends StatelessWidget {
             ),
             child: TextField(
               decoration:
-                  InputDecoration(border: InputBorder.none, hintText: 'Street'),
+                  InputDecoration(border: InputBorder.none, hintText: 'Calle'),
             ),
           ),
           Column(
@@ -56,7 +57,7 @@ class AddAddressForm extends StatelessWidget {
                     style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                     decoration: InputDecoration(
                       border: InputBorder.none,
-                      hintText: 'Name on card',
+                      hintText: 'Nombre en la tarjeta',
                       hintStyle:
                           TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                     ),
@@ -73,7 +74,7 @@ class AddAddressForm extends StatelessWidget {
             ),
             child: TextField(
               decoration: InputDecoration(
-                  border: InputBorder.none, hintText: 'Name on card'),
+                  border: InputBorder.none, hintText: 'Numero en la tarjeta'),
             ),
           ),
           ClipRRect(
@@ -87,7 +88,7 @@ class AddAddressForm extends StatelessWidget {
               ),
               child: TextField(
                 decoration: InputDecoration(
-                    border: InputBorder.none, hintText: 'Postal code'),
+                    border: InputBorder.none, hintText: 'Código postal'),
               ),
             ),
           ),

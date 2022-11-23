@@ -7,9 +7,8 @@ class AddAddressPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Widget finishButton = InkWell(
-      onTap:()=> Navigator.of(context).push(
-          MaterialPageRoute(
-              builder: (_) => SelectCardPage())),
+      onTap: () => Navigator.of(context)
+          .push(MaterialPageRoute(builder: (_) => SelectCardPage())),
       child: Container(
         height: 80,
         width: MediaQuery.of(context).size.width / 1.5,
@@ -24,7 +23,7 @@ class AddAddressPage extends StatelessWidget {
             ],
             borderRadius: BorderRadius.circular(9.0)),
         child: Center(
-          child: Text("Finish",
+          child: Text("Finalizar",
               style: const TextStyle(
                   color: const Color(0xfffefefe),
                   fontWeight: FontWeight.w600,
@@ -41,7 +40,7 @@ class AddAddressPage extends StatelessWidget {
         elevation: 0.0,
         iconTheme: IconThemeData(color: darkGrey),
         title: Text(
-          'Add Address',
+          'Añadir dirección',
           style: const TextStyle(
               color: darkGrey,
               fontWeight: FontWeight.w500,
@@ -86,7 +85,7 @@ class AddAddressPage extends StatelessWidget {
                                           'assets/icons/address_home.png'),
                                     ),
                                     Text(
-                                      'Add New Address',
+                                      'Agregar nueva dirección',
                                       style: TextStyle(
                                         fontSize: 8,
                                         color: darkGrey,
@@ -117,7 +116,7 @@ class AddAddressPage extends StatelessWidget {
                                       ),
                                     ),
                                     Text(
-                                      'Simon Philip,\nCity Oscarlad',
+                                      'Cañete,\nCiudad Mala',
                                       style: TextStyle(
                                         fontSize: 8,
                                         color: Colors.white,
@@ -147,7 +146,7 @@ class AddAddressPage extends StatelessWidget {
                                           height: 20),
                                     ),
                                     Text(
-                                      'Workplace',
+                                      'Lugar de trabajo',
                                       style: TextStyle(
                                         fontSize: 8,
                                         color: Colors.white,

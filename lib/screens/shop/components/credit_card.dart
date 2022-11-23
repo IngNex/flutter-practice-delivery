@@ -1,14 +1,19 @@
+import 'package:ecommerce_int2/app_properties.dart';
 import 'package:flutter/material.dart';
 
 class CreditCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return  Container(
+    return Container(
       height: 200,
       width: 250,
       padding: EdgeInsets.all(16.0),
       decoration: BoxDecoration(
-          color: Colors.deepPurple[700],
+          gradient: LinearGradient(
+            colors: [Colors.red, darkYellow],
+            begin: FractionalOffset.topCenter,
+            end: FractionalOffset.bottomCenter,
+          ),
           borderRadius: BorderRadius.all(Radius.circular(10))),
       child: Column(
         mainAxisSize: MainAxisSize.min,
@@ -16,7 +21,7 @@ class CreditCard extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: <Widget>[
           Text(
-            'CREDIT CARD',
+            'Tajeta de credito',
             style: TextStyle(color: Colors.white),
           ),
           Container(
@@ -32,11 +37,11 @@ class CreditCard extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Text(
-                'Name',
+                'Nombre:',
                 style: TextStyle(color: Colors.grey),
               ),
               Text(
-                'GEORGE W BUSH',
+                'Michael Rodriguez',
                 style: TextStyle(color: Colors.white),
               ),
             ],

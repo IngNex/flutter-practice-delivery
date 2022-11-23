@@ -18,7 +18,7 @@ class SelectCardPage extends StatelessWidget {
           brightness: Brightness.light,
           backgroundColor: Colors.transparent,
           title: Text(
-            'Select Card',
+            'Seleccionar Tarjeta',
             style: TextStyle(color: darkGrey),
           ),
           elevation: 0,
@@ -37,7 +37,7 @@ class SelectCardPage extends StatelessWidget {
                     width: MediaQuery.of(context).size.height / 1.4,
                     height: width - 10,
                     decoration: BoxDecoration(
-                        color: Color(0xff353A85),
+                        color: Color.fromARGB(255, 26, 33, 131),
                         borderRadius: BorderRadius.all(Radius.circular(10)),
                         boxShadow: shadow),
                     child: Column(
@@ -69,7 +69,7 @@ class SelectCardPage extends StatelessWidget {
                     height: cardHeight,
                     width: width,
                     decoration: BoxDecoration(
-                        color: Color(0xffA647DD),
+                        color: Color.fromARGB(255, 252, 60, 60),
                         borderRadius: BorderRadius.all(Radius.circular(10)),
                         boxShadow: shadow),
                   ),
@@ -80,7 +80,7 @@ class SelectCardPage extends StatelessWidget {
                     height: cardHeight,
                     width: width,
                     decoration: BoxDecoration(
-                        color: Color(0xff454ECA),
+                        color: Color.fromARGB(255, 77, 113, 255),
                         borderRadius: BorderRadius.all(Radius.circular(10)),
                         boxShadow: shadow),
                   ),
@@ -107,10 +107,10 @@ class SelectCardPage extends StatelessWidget {
                               CircleAvatar(
                                 maxRadius: 16,
                                 backgroundImage:
-                                    AssetImage('assets/background.jpg'),
+                                    AssetImage('assets/IngNex.jpg'),
                               ),
                               SizedBox(width: 8.0),
-                              Text('Kinder Joy',
+                              Text('Banco de Credito del Perú',
                                   style: TextStyle(
                                     color: Colors.grey,
                                   ))
@@ -119,7 +119,7 @@ class SelectCardPage extends StatelessWidget {
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.end,
                             children: <Widget>[
-                              Text('Roberto',
+                              Text('Michael Rodriguez',
                                   style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 10.0)),
@@ -142,11 +142,10 @@ class SelectCardPage extends StatelessWidget {
                                       color: Colors.grey[50]),
                                   child: TextField(
                                     textAlign: TextAlign.center,
-                                    keyboardType:
-                                        TextInputType.number,
-                                      inputFormatters:[
-                                        LengthLimitingTextInputFormatter(3),
-                                      ],
+                                    keyboardType: TextInputType.number,
+                                    inputFormatters: [
+                                      LengthLimitingTextInputFormatter(3),
+                                    ],
                                     decoration: InputDecoration(
                                         contentPadding: EdgeInsets.zero,
                                         hintText: 'CVV',
@@ -159,7 +158,7 @@ class SelectCardPage extends StatelessWidget {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Text('This will be deducted',
+                              Text('Esto se deducirá',
                                   style: TextStyle(
                                       color: Colors.grey, fontSize: 10.0)),
                               Row(
@@ -173,7 +172,7 @@ class SelectCardPage extends StatelessWidget {
                                         fontSize: 10.0),
                                   ),
                                   Text(
-                                    '90.00',
+                                    '120.00',
                                     style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                         fontSize: 20.0),
