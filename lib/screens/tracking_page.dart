@@ -9,25 +9,25 @@ class TrackingPage extends StatefulWidget {
 
 class _TrackingPageState extends State<TrackingPage> {
   final List<Location> locations = [
-    Location('Kolkata Facility', DateTime(2019, 6, 5, 5, 23, 4),
+    Location('Avenida Tupac Amaru', DateTime(2019, 6, 5, 5, 23, 4),
         showHour: false, isHere: false, passed: true),
-    Location('Hyderabad Facility', DateTime(2019, 6, 6, 5, 23, 4),
+    Location('Avenida Naranjos', DateTime(2019, 6, 6, 5, 23, 4),
         showHour: false, isHere: false, passed: true),
     Location(
-      'Chennai Facility',
+      'Avenida Cipres',
       DateTime(2019, 6, 9, 5, 23, 4),
       showHour: false,
       isHere: true,
     ),
     Location(
-      'Kerala Facility',
+      'Avenida Jiron Real',
       DateTime(2019, 6, 10, 5, 23, 4),
       showHour: true,
       isHere: false,
     ),
   ];
 
-  String selectedProduct = 'Boat Headphones Bass boost 100v';
+  String selectedProduct = 'Whisky Johnnie Walker Black Label';
 
   @override
   Widget build(BuildContext context) {
@@ -45,7 +45,7 @@ class _TrackingPageState extends State<TrackingPage> {
               brightness: Brightness.light,
               iconTheme: IconThemeData(color: Colors.grey),
               title: Text(
-                'Shipped',
+                'Enviado',
                 style: TextStyle(
                   color: darkGrey,
                   fontSize: 22,
@@ -69,12 +69,12 @@ class _TrackingPageState extends State<TrackingPage> {
                       child: DropdownButtonHideUnderline(
                         child: DropdownButton(
                           items: <String>[
-                            'Boat Headphones Bass boost 100v',
-                            'Boat Headphones Bass boost 200v',
-                            'Boat Headphones Bass boost 300v',
-                            'Boat Headphones Bass boost 400v',
-                            'Boat Headphones Bass boost 500v',
-                            'Boat Headphones Bass double boosting 600v'
+                            'Whisky Johnnie Walker Black Label',
+                            'Whisky Something',
+                            'Pisco La Botija Italia',
+                            'Pisco Verde Quebranta',
+                            'Vino Tinto País',
+                            'Vittoria Muscat Rosso'
                           ].map((val) {
                             return DropdownMenuItem<String>(
                               value: val,
