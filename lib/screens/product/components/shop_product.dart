@@ -56,7 +56,7 @@ class ShopProductDisplay extends StatelessWidget {
       width: 200,
       child: Stack(children: <Widget>[
         Positioned(
-          left: 25,
+          left: 10,
           child: SizedBox(
             height: 150,
             width: 150,
@@ -67,18 +67,18 @@ class ShopProductDisplay extends StatelessWidget {
           ),
         ),
         Positioned(
-          left: 50,
+          left: 45,
           top: 5,
           child: SizedBox(
-              height: 80,
-              width: 80,
+              height: 90,
+              width: 90,
               child: Image.asset(
                 '${product.image}',
                 fit: BoxFit.contain,
               )),
         ),
         Positioned(
-          right: 30,
+          right: 50,
           bottom: 25,
           child: Align(
             child: IconButton(

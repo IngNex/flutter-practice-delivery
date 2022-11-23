@@ -18,43 +18,43 @@ class _SearchPageState extends State<SearchPage>
 
   List<Product> products = [
     Product(
-        'assets/headphones_2.png',
-        'Skullcandy headset L325',
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Nec nam aliquam sem et tortor consequat id porta nibh. Orci porta non pulvinar neque laoreet suspendisse. Id nibh tortor id aliquet. Dui sapien eget mi proin. Viverra vitae congue eu consequat ac felis donec. Etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus. Vulputate mi sit amet mauris commodo quis imperdiet. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim. Sit amet cursus sit amet dictum sit amet justo. Mattis pellentesque id nibh tortor. Sed blandit libero volutpat sed cras ornare arcu dui. Fermentum et sollicitudin ac orci phasellus. Ipsum nunc aliquet bibendum enim facilisis gravida. Viverra suspendisse potenti nullam ac tortor. Dapibus ultrices in iaculis nunc sed. Nisi porta lorem mollis aliquam ut porttitor leo a. Phasellus egestas tellus rutrum tellus pellentesque. Et malesuada fames ac turpis egestas maecenas pharetra convallis. Commodo ullamcorper a lacus vestibulum sed arcu non odio. Urna id volutpat lacus laoreet non curabitur gravida arcu ac. Eros in cursus turpis massa. Eget mauris pharetra et ultrices neque.',
+        'assets/semi_rose.png',
+        'Vino Gran Rosé',
+        'Color rosado pálido muy atractivo. En nariz predominan notas a cereza, fresa, melocotón. En boca, es frutado y con un dulzor agradable, con ligera acidez pero con persistencia en boca.',
+        80.99),
+    Product(
+        'assets/pisco_la_botija.png',
+        'Pisco La Botija Italia',
+        'Es un pisco elaborado con uvas rigurosamente seleccionadas «aromáticas» el Italia. En nariz, se encuentran atractivos aromas a Muscat que se intensifican en boca dando una sensación de dulzor. Este pisco asocia fuerza y redondez. Un gran respeto en la destilación permite preservar la fineza obtenida en los largos meses de crecimiento y maduración de las uvas.',
         102.99),
     Product(
-        'assets/headphones_3.png',
-        'Skullcandy headset X25',
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Nec nam aliquam sem et tortor consequat id porta nibh. Orci porta non pulvinar neque laoreet suspendisse. Id nibh tortor id aliquet. Dui sapien eget mi proin. Viverra vitae congue eu consequat ac felis donec. Etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus. Vulputate mi sit amet mauris commodo quis imperdiet. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim. Sit amet cursus sit amet dictum sit amet justo. Mattis pellentesque id nibh tortor. Sed blandit libero volutpat sed cras ornare arcu dui. Fermentum et sollicitudin ac orci phasellus. Ipsum nunc aliquet bibendum enim facilisis gravida. Viverra suspendisse potenti nullam ac tortor. Dapibus ultrices in iaculis nunc sed. Nisi porta lorem mollis aliquam ut porttitor leo a. Phasellus egestas tellus rutrum tellus pellentesque. Et malesuada fames ac turpis egestas maecenas pharetra convallis. Commodo ullamcorper a lacus vestibulum sed arcu non odio. Urna id volutpat lacus laoreet non curabitur gravida arcu ac. Eros in cursus turpis massa. Eget mauris pharetra et ultrices neque.',
-        55.99),
-    Product(
-        'assets/headphones.png',
-        'Blackzy PRO hedphones M003',
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Nec nam aliquam sem et tortor consequat id porta nibh. Orci porta non pulvinar neque laoreet suspendisse. Id nibh tortor id aliquet. Dui sapien eget mi proin. Viverra vitae congue eu consequat ac felis donec. Etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus. Vulputate mi sit amet mauris commodo quis imperdiet. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim. Sit amet cursus sit amet dictum sit amet justo. Mattis pellentesque id nibh tortor. Sed blandit libero volutpat sed cras ornare arcu dui. Fermentum et sollicitudin ac orci phasellus. Ipsum nunc aliquet bibendum enim facilisis gravida. Viverra suspendisse potenti nullam ac tortor. Dapibus ultrices in iaculis nunc sed. Nisi porta lorem mollis aliquam ut porttitor leo a. Phasellus egestas tellus rutrum tellus pellentesque. Et malesuada fames ac turpis egestas maecenas pharetra convallis. Commodo ullamcorper a lacus vestibulum sed arcu non odio. Urna id volutpat lacus laoreet non curabitur gravida arcu ac. Eros in cursus turpis massa. Eget mauris pharetra et ultrices neque.',
-        152.99),
+        'assets/Whisky-Johnnie-Walkerl.png',
+        'Whisky JW Red Label',
+        'Johnnie Walker Red Label se destaca por su carácter e intensidad, por sus notas especiadas que estallan con sabores vibrantes y ahumados. Es una mezcla que combina whiskies ligeros de la costa este escocesa y whiskies ahumados y oscuros de la costa oeste, creando una extraordinaria profundidad de sabor.',
+        66.99),
   ];
 
   List<String> timeFilter = [
-    'Brand',
-    'New',
-    'Latest',
-    'Trending',
-    'Discount',
+    'Marca',
+    'Nuevo',
+    'Más reciente',
+    'Tendencias',
+    'Descuento',
   ];
 
   List<String> categoryFilter = [
-    'Skull Candy',
-    'Boat',
-    'JBL',
-    'Micromax',
-    'Seg',
+    'Pisco',
+    'Vino',
+    'Vodka',
+    'Ron',
+    'Cerveza',
   ];
 
   List<String> priceFilter = [
-    '\$50-200',
-    '\$200-400',
-    '\$400-800',
-    '\$800-1000',
+    '\$50-60',
+    '\$70-80',
+    '\$90-100',
+    '\$100-300',
   ];
 
   List<Product> searchResults = [];
@@ -94,7 +94,7 @@ class _SearchPageState extends State<SearchPage>
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
                 Text(
-                  'Search',
+                  'Buscar',
                   style: TextStyle(
                     color: darkGrey,
                     fontSize: 22,
@@ -146,7 +146,7 @@ class _SearchPageState extends State<SearchPage>
                     searchResults.clear();
                   },
                   child: Text(
-                    'Clear',
+                    'Borrar',
                     style: TextStyle(color: Colors.red),
                   ),
                 ),
@@ -196,7 +196,7 @@ class _SearchPageState extends State<SearchPage>
             child: Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(
-                'Filters',
+                'Filtros',
                 style: TextStyle(color: Colors.grey[300]),
               ),
             ),
@@ -207,7 +207,7 @@ class _SearchPageState extends State<SearchPage>
               padding:
                   const EdgeInsets.only(left: 32.0, top: 16.0, bottom: 16.0),
               child: Text(
-                'Sort By',
+                'Orden',
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
             ),

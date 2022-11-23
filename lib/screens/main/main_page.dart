@@ -119,7 +119,7 @@ class _MainPageState extends State<MainPage>
                           102.99),
                       Product(
                           'assets/pisco_acholado.png',
-                          'Pisco Edición Limitada Acholado',
+                          'Pisco Acholado',
                           'Es un blend de dos variedades de uvas, la Italia que es una uva aromática y Quebranta que es una uva no aromática. En vista, limpio, transparente, incoloro y brillante. En nariz, es muy especial porque reflejan aromas herbáceos y frutales a la vez, como duraznos. En boca es la mezcla ideal, ya que combina la potencia del Italia y la extrema redondez del quebranta.',
                           55.99),
                       Product(
@@ -155,7 +155,7 @@ class _MainPageState extends State<MainPage>
                           55.99),
                       Product(
                           'assets/Whisky-Something-Special.png',
-                          'Whisky Something Special',
+                          'Whisky Something',
                           'se caracteriza por su aroma ligeramente ahumado y afrutado que crea un perfecto balance y equilibrio. Su sabor es suave, tiene notas de malta dulce y chocolate amargo, con un final seco y sensaciones de humo, cuero y especias.',
                           152.99),
                     ];
