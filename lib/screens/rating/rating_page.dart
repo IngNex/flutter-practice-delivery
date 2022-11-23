@@ -11,7 +11,7 @@ class RatingPage extends StatefulWidget {
 
 class _RatingPageState extends State<RatingPage> {
   double rating = 0.0;
-  List<int> ratings = [2, 1, 5, 2, 4, 3];
+  List<int> ratings = [3, 2, 5, 2, 4, 3];
 
   @override
   Widget build(BuildContext context) {
@@ -61,13 +61,14 @@ class _RatingPageState extends State<RatingPage> {
                                 boxShadow: shadow,
                                 border: Border.all(
                                     width: 8.0, color: Colors.white)),
-                            child: Image.asset('assets/headphones.png'),
+                            child:
+                                Image.asset('assets/pisco_verde_quebranta.png'),
                           ),
                           Padding(
                             padding: const EdgeInsets.symmetric(
                                 horizontal: 72.0, vertical: 16.0),
                             child: Text(
-                              'Boat Rockerz 350 On-Ear Bluetooth Headphones',
+                              'Pisco Verde Quebranta',
                               style: TextStyle(fontWeight: FontWeight.bold),
                               textAlign: TextAlign.center,
                             ),
@@ -83,7 +84,7 @@ class _RatingPageState extends State<RatingPage> {
                             Padding(
                               padding: const EdgeInsets.only(right: 16.0),
                               child: Text(
-                                '4.8',
+                                '7.8',
                                 style: TextStyle(fontSize: 48),
                               ),
                             ),
@@ -95,7 +96,7 @@ class _RatingPageState extends State<RatingPage> {
                                   ignoreGestures: true,
                                   itemSize: 20,
                                   allowHalfRating: true,
-                                  initialRating: 1,
+                                  initialRating: 4,
                                   itemPadding:
                                       EdgeInsets.symmetric(horizontal: 4.0),
                                   ratingWidget: RatingWidget(
@@ -117,7 +118,7 @@ class _RatingPageState extends State<RatingPage> {
                                 ),
                                 Padding(
                                   padding: const EdgeInsets.only(top: 4.0),
-                                  child: Text('from 25 people'),
+                                  child: Text('De 25 personas'),
                                 )
                               ],
                             ),
@@ -128,7 +129,7 @@ class _RatingPageState extends State<RatingPage> {
                         padding: const EdgeInsets.only(bottom: 16.0),
                         child: Align(
                             alignment: Alignment(-1, 0),
-                            child: Text('Recent Reviews')),
+                            child: Text('Reseñas recientes')),
                       ),
                       Column(
                         children: <Widget>[
@@ -150,8 +151,8 @@ class _RatingPageState extends State<RatingPage> {
                                             const EdgeInsets.only(right: 16.0),
                                         child: CircleAvatar(
                                           maxRadius: 14,
-                                          backgroundImage: AssetImage(
-                                              'assets/background.jpg'),
+                                          backgroundImage:
+                                              AssetImage('assets/user.png'),
                                         ),
                                       ),
                                       Expanded(
@@ -166,7 +167,7 @@ class _RatingPageState extends State<RatingPage> {
                                                       .spaceBetween,
                                               children: <Widget>[
                                                 Text(
-                                                  'Billy Holand',
+                                                  'Juan Dolorier',
                                                   style: TextStyle(
                                                       fontWeight:
                                                           FontWeight.bold),
@@ -212,7 +213,7 @@ class _RatingPageState extends State<RatingPage> {
                                               ),
                                             ),
                                             Text(
-                                              'Not as I expected! ... I`m really sad',
+                                              '¡Excelente licor! ... estoy muy satisfecho',
                                               style: TextStyle(
                                                 color: Colors.grey,
                                               ),
