@@ -11,8 +11,7 @@ class ForgotPasswordPage extends StatefulWidget {
 }
 
 class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
-  TextEditingController phoneNumber =
-      TextEditingController(text: 'ingresa numero');
+  TextEditingController phoneNumber = TextEditingController(text: '954971403');
 
   GlobalKey prefixKey = GlobalKey();
   double prefixWidth = 0;
@@ -126,9 +125,10 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
                   child: Padding(
                     padding: const EdgeInsets.only(top: 8.0),
                     child: TextField(
-                      controller: phoneNumber,
+                      /*controller: phoneNumber,*/
                       style: TextStyle(fontSize: 16.0),
                       keyboardType: TextInputType.phone,
+                      decoration: InputDecoration(hintText: "Ingrese Numero"),
                     ),
                   ),
                 ),

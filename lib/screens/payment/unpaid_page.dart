@@ -27,7 +27,7 @@ class _UnpaidPageState extends State<UnpaidPage> {
             ],
             borderRadius: BorderRadius.circular(9.0)),
         child: Center(
-          child: Text("Pay Now",
+          child: Text("Pagar",
               style: const TextStyle(
                   color: const Color(0xfffefefe),
                   fontWeight: FontWeight.w600,
@@ -38,92 +38,95 @@ class _UnpaidPageState extends State<UnpaidPage> {
     );
 
     return Material(
-        color: Colors.white,
-        child: SafeArea(
-          child: LayoutBuilder(
-              builder: (_, constraints) => SingleChildScrollView(
-                  physics: ClampingScrollPhysics(),
-                  child: ConstrainedBox(
-                      constraints: BoxConstraints(
-                        minHeight: constraints.maxHeight,
+      color: Colors.white,
+      child: SafeArea(
+        child: LayoutBuilder(
+          builder: (_, constraints) => SingleChildScrollView(
+            physics: ClampingScrollPhysics(),
+            child: ConstrainedBox(
+              constraints: BoxConstraints(
+                minHeight: constraints.maxHeight,
+              ),
+              child: Padding(
+                padding: const EdgeInsets.only(top: kToolbarHeight),
+                child: Column(
+                  children: <Widget>[
+                    Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 16.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: <Widget>[
+                          Text(
+                            'Falta Pagar',
+                            style: TextStyle(
+                              color: darkGrey,
+                              fontSize: 22,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          CloseButton()
+                        ],
                       ),
-                      child: Padding(
-                          padding: const EdgeInsets.only(top: kToolbarHeight),
-                          child: Column(children: <Widget>[
-                            Padding(
-                              padding: EdgeInsets.symmetric(horizontal: 16.0),
-                              child: Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: <Widget>[
-                                  Text(
-                                    'Unpaid',
-                                    style: TextStyle(
-                                      color: darkGrey,
-                                      fontSize: 22,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                  CloseButton()
-                                ],
-                              ),
+                    ),
+                    PromoItem(),
+                    Container(
+                      margin: const EdgeInsets.all(16.0),
+                      padding: const EdgeInsets.fromLTRB(16.0, 0, 16.0, 16.0),
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          boxShadow: shadow,
+                          borderRadius: BorderRadius.only(
+                              bottomLeft: Radius.circular(10),
+                              bottomRight: Radius.circular(10))),
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: <Widget>[
+                          ListTile(
+                            title: Text('Whisky JW Black Label ..'),
+                            trailing: Text('80.24'),
+                          ),
+                          ListTile(
+                            title: Text('Tax'),
+                            trailing: Text('1.25'),
+                          ),
+                          ListTile(
+                            title: Text('Subtotal'),
+                            trailing: Text('81.49'),
+                          ),
+                          ListTile(
+                            title: Text('Promocodigo'),
+                            trailing: Text('-10.93'),
+                          ),
+                          Divider(),
+                          ListTile(
+                            title: Text(
+                              'Total',
+                              style: TextStyle(
+                                  fontSize: 20, fontWeight: FontWeight.bold),
                             ),
-                            PromoItem(),
-                            Container(
-                              margin: const EdgeInsets.all(16.0),
-                              padding: const EdgeInsets.fromLTRB(
-                                  16.0, 0, 16.0, 16.0),
-                              decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  boxShadow: shadow,
-                                  borderRadius: BorderRadius.only(
-                                      bottomLeft: Radius.circular(10),
-                                      bottomRight: Radius.circular(10))),
-                              child: Column(
-                                mainAxisSize: MainAxisSize.min,
-                                children: <Widget>[
-                                  ListTile(
-                                    title: Text('Boat Rockerz 350 On-Ear ..'),
-                                    trailing: Text('74.68'),
-                                  ),
-                                  ListTile(
-                                    title: Text('Tax'),
-                                    trailing: Text('1.25'),
-                                  ),
-                                  ListTile(
-                                    title: Text('Subtotal'),
-                                    trailing: Text('76.93'),
-                                  ),
-                                  ListTile(
-                                    title: Text('Promocode'),
-                                    trailing: Text('-10.93'),
-                                  ),
-                                  Divider(),
-                                  ListTile(
-                                    title: Text(
-                                      'Total',
-                                      style: TextStyle(
-                                          fontSize: 20,
-                                          fontWeight: FontWeight.bold),
-                                    ),
-                                    trailing: Text(
-                                      '\$ 66.93',
-                                      style: TextStyle(
-                                          fontSize: 20,
-                                          fontWeight: FontWeight.bold),
-                                    ),
-                                  )
-                                ],
-                              ),
+                            trailing: Text(
+                              '\$ 70.56',
+                              style: TextStyle(
+                                  fontSize: 20, fontWeight: FontWeight.bold),
                             ),
-                            SizedBox(
-                              height: 24,
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.only(bottom: 20),
-                              child: payNow,
-                            )
-                          ]))))),
-        ));
+                          )
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      height: 24,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 20),
+                      child: payNow,
+                    )
+                  ],
+                ),
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
   }
 }

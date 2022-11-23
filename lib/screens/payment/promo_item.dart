@@ -36,7 +36,7 @@ class PromoItem extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: <Widget>[
                                 Text(
-                                  'Boat Rockerz 400 On-Ear Bluetooth Headphones',
+                                  'Whisky Johnnie Walker Black Label',
                                   textAlign: TextAlign.right,
                                   style: TextStyle(
                                     fontWeight: FontWeight.bold,
@@ -53,7 +53,7 @@ class PromoItem extends StatelessWidget {
                                     children: <Widget>[
                                       ColorOption(Colors.red),
                                       Text(
-                                        '\$58.24',
+                                        '\$80.24',
                                         textAlign: TextAlign.center,
                                         style: TextStyle(
                                             color: darkGrey,
@@ -106,7 +106,7 @@ class PromoItem extends StatelessWidget {
                         children: <Widget>[
                           Padding(
                             padding: EdgeInsets.symmetric(vertical: 16.0),
-                            child: Text('Use Promo Code'),
+                            child: Text('Usar Codigo de Promo'),
                           ),
                           Container(
                             padding: EdgeInsets.only(left: 16.0),
@@ -118,7 +118,7 @@ class PromoItem extends StatelessWidget {
                             child: TextField(
                               decoration: InputDecoration(
                                   border: InputBorder.none,
-                                  hintText: 'Promo Code'),
+                                  hintText: 'Codigo de promoción'),
                             ),
                           ),
                         ],
@@ -131,9 +131,9 @@ class PromoItem extends StatelessWidget {
             top: 5,
             child: ShopProductDisplay(
               Product(
-                  'assets/headphones.png',
-                  'Boat roackerz 400 On-Ear Bluetooth Headphones',
-                  'description',
+                  'assets/Black-label.png',
+                  'Whisky Johnnie Walker Black Label',
+                  'Creado usando sólo whiskies con un mínimo de 12 años de añejamiento de los 4 rincones de Escocia',
                   45.3),
               onPressed: () {},
             ),
