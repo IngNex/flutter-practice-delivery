@@ -43,6 +43,7 @@ class ProductOption extends StatelessWidget {
                         style: TextStyle(
                             fontWeight: FontWeight.bold,
                             color: Colors.white,
+                            fontSize: 25,
                             shadows: shadow)),
                   ),
                   InkWell(
@@ -61,7 +62,7 @@ class ProductOption extends StatelessWidget {
                       padding: EdgeInsets.symmetric(vertical: 16.0),
                       child: Center(
                         child: Text(
-                          'Buy Now',
+                          'Comprar',
                           style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
@@ -87,7 +88,7 @@ class ProductOption extends StatelessWidget {
                       padding: EdgeInsets.symmetric(vertical: 16.0),
                       child: Center(
                         child: Text(
-                          'Add to cart',
+                          'Agregar',
                           style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,

@@ -32,7 +32,7 @@ class _ProductPageState extends State<ProductPage> {
                 product: product,
               ))),
       child: Container(
-        height: 80,
+        height: 60,
         width: width / 1.5,
         decoration: BoxDecoration(
             gradient: mainButton,
@@ -45,7 +45,7 @@ class _ProductPageState extends State<ProductPage> {
             ],
             borderRadius: BorderRadius.circular(9.0)),
         child: Center(
-          child: Text("View Product",
+          child: Text("Ver producto",
               style: const TextStyle(
                   color: const Color(0xfffefefe),
                   fontWeight: FontWeight.w600,
@@ -72,7 +72,7 @@ class _ProductPageState extends State<ProductPage> {
           )
         ],
         title: Text(
-          'Headphones',
+          product.name,
           style: const TextStyle(
               color: darkGrey, fontWeight: FontWeight.w500, fontSize: 18.0),
         ),
@@ -113,13 +113,14 @@ class _ProductPageState extends State<ProductPage> {
                         width: 90,
                         height: 40,
                         decoration: BoxDecoration(
-                          color: Color.fromRGBO(253, 192, 84, 1),
+                          color: darkYellow,
+                          /*Color.fromRGBO(253, 192, 84, 1),*/
                           borderRadius: BorderRadius.circular(4.0),
                           border:
                               Border.all(color: Color(0xFFFFFFFF), width: 0.5),
                         ),
                         child: Center(
-                          child: new Text("Details",
+                          child: new Text("Detalles",
                               style: const TextStyle(
                                   color: const Color(0xeefefefe),
                                   fontWeight: FontWeight.w300,
@@ -155,8 +156,15 @@ class _ProductPageState extends State<ProductPage> {
                   gradient: LinearGradient(
                       colors: [
                     Color.fromRGBO(255, 255, 255, 0),
+                    Color.fromARGB(107, 34, 64, 233),
+                    Color.fromARGB(222, 34, 64, 233),
+
+                    /*
+                    Color.fromARGB(124, 84, 166, 253),
+                    Color.fromARGB(124, 84, 98, 253),
+                    Color.fromRGBO(255, 255, 255, 0),
                     Color.fromRGBO(253, 192, 84, 0.5),
-                    Color.fromRGBO(253, 192, 84, 1),
+                    Color.fromRGBO(253, 192, 84, 1),*/
                   ],
                       begin: FractionalOffset.topCenter,
                       end: FractionalOffset.bottomCenter)),

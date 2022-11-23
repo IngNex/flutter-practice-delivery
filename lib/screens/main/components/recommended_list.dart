@@ -6,40 +6,48 @@ import 'package:flutter/material.dart';
 
 class RecommendedList extends StatelessWidget {
   List<Product> products = [
-    Product('assets/rose_tuyo.png', 'Vino Rosé Tuyo',
-        'Vino ligeramente gasificado.', 2.33),
-    Product('assets/gran_rose.png', 'Vino Rosé Gran Selección',
-        'Rojo cereza con ribetes violáceo.', 10),
-    Product('assets/vino_malbec_merlot.png', 'Vino Gran Tinto Malbec',
-        'Rojo cereza cubierto con tonalidades frambuesa.', 20),
+    Product(
+      'assets/rose_tuyo.png',
+      'Vino Rosé Tuyo',
+      'Vino ligeramente gasificado.',
+      80.33,
+    ),
+    Product(
+      'assets/gran_rose.png',
+      'Vino Rosé Gran',
+      'Rojo cereza con ribetes violáceo.',
+      60,
+    ),
+    Product('assets/vino_malbec_merlot.png', 'Vino Gran Malbec',
+        'Rojo cereza cubierto con tonalidades frambuesa.', 70),
     Product(
         'assets/gran_tinto_fr.png',
         'Vino Gran Tinto',
         'En boca es fresco y de cuerpo medio, con un suave sabor mineral, taninos amables',
-        30),
+        80),
     Product(
         'assets/vino_vittoria_syrah.png',
         'Vino Vittoria Syrah',
         'Posee un producto color rojo violáceo. En nariz presenta delicadas notas florales como violetas.',
-        40),
+        60),
     Product(
         'assets/pisco_verde_italia.png',
-        'Pisco Mosto Verde Colección Privada Italia',
+        'Pisco Mosto Verde Italia',
         'Es el resultado de la interrupción de la fermentación del Mosto de Uva Italia.',
-        102.33),
+        90.33),
     Product(
         'assets/espumante_muscat_rosso.png',
-        'Espumante Vittoria Muscat Rosso',
+        'Vittoria Muscat Rosso',
         'Espumante semi seco. Posee un atractivo color rosado. Con finas burbujas producto de la segunda fermentación (método Charmat).',
         52.33),
     Product(
         'assets/vino_vittoria_sauvignon_blanc.png',
-        'Vino Vittoria Sauvignon Blanc',
+        'Vino Vittoria Sauvignon',
         'Se caracteriza por tener un color amarillo pálido con tonalidades verdosas, aromas complejos y elegantes.',
         62.33),
     Product(
         'assets/pisco_la_botija_quebranta.png',
-        'Pisco La Botija Quebranta',
+        'Pisco Botija Quebranta',
         'La fineza de este Pisco es el resultado de una rigurosa selección de las uvas y de una vinificación que combina tradición y alta tecnología.',
         72.33),
   ];
@@ -62,7 +70,7 @@ class RecommendedList extends StatelessWidget {
               ),
               Center(
                   child: Text(
-                'Recommended',
+                'Recomendar',
                 style: TextStyle(
                     color: darkGrey,
                     fontSize: 16.0,

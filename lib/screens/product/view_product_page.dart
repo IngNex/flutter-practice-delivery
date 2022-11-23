@@ -63,7 +63,7 @@ class _ViewProductPageState extends State<ViewProductPage> {
         maxLines: 5,
         semanticsLabel: '...',
         overflow: TextOverflow.ellipsis,
-        style: TextStyle(color: Color.fromRGBO(255, 255, 255, 0.6)),
+        style: TextStyle(color: Color.fromARGB(153, 0, 21, 255)),
       ),
     );
 
@@ -85,7 +85,7 @@ class _ViewProductPageState extends State<ViewProductPage> {
             )
           ],
           title: Text(
-            'Headphones',
+            'Ver Licor',
             style: const TextStyle(
                 color: darkGrey,
                 fontWeight: FontWeight.w500,
@@ -108,11 +108,11 @@ class _ViewProductPageState extends State<ViewProductPage> {
                   child: Row(mainAxisSize: MainAxisSize.min, children: <Widget>[
                     Flexible(
                       child: ColorList([
-                        Colors.red,
-                        Colors.blue,
-                        Colors.purple,
-                        Colors.green,
-                        Colors.yellow
+                        Color.fromARGB(255, 175, 14, 255),
+                        Color.fromARGB(255, 33, 82, 243),
+                        Color.fromARGB(255, 255, 13, 239),
+                        Color.fromARGB(255, 17, 204, 23),
+                        Color.fromARGB(255, 254, 240, 108)
                       ]),
                     ),
                     RawMaterialButton(

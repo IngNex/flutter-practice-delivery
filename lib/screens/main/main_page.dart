@@ -23,17 +23,17 @@ String selectedTimeline = 'Vinos';
 List<Product> products = [
   Product(
       'assets/semi_rose.png',
-      'Vino Tabernero Gran Rosé',
+      'Vino Gran Rosé',
       'Color rosado pálido muy atractivo. En nariz predominan notas a cereza, fresa, melocotón. En boca, es frutado y con un dulzor agradable, con ligera acidez pero con persistencia en boca.',
       80.99),
   Product(
       'assets/vino_tinto_pais.png',
-      'Vino Tabernero Tinto País',
+      'Vino Tinto País',
       'De color rubí intenso. En nariz presenta notas a compotas de frutas y vainilla. En boca es un vino dulce, agradable con taninos suaves, ideal para los que gustan de tintos ligeros. Deja en boca un largo y placentero final.',
       55.99),
   Product(
       'assets/seco_blanco.png',
-      'Vino Gran Blanco Fina Reserva',
+      'Vino Gran Blanco Fina',
       'Nota de Cata: Tiene un color amarillo sumamente ligero con tonalidades  verdosas. En nariz, los aromas marcados a fruta blanca y manzana verde, muy herbáceo y mineral que se refleja en boca, lo que nos da un vino ligero, equilibrado y fácil de tomar.',
       82.99),
 ];
@@ -82,17 +82,17 @@ class _MainPageState extends State<MainPage>
                     products = [
                       Product(
                           'assets/semi_rose.png',
-                          'Vino Tabernero Gran Rosé',
+                          'Vino Gran Rosé',
                           'Color rosado pálido muy atractivo. En nariz predominan notas a cereza, fresa, melocotón. En boca, es frutado y con un dulzor agradable, con ligera acidez pero con persistencia en boca.',
                           80.99),
                       Product(
                           'assets/vino_tinto_pais.png',
-                          'Vino Tabernero Tinto País',
+                          'Vino Tinto País',
                           'De color rubí intenso. En nariz presenta notas a compotas de frutas y vainilla. En boca es un vino dulce, agradable con taninos suaves, ideal para los que gustan de tintos ligeros. Deja en boca un largo y placentero final.',
                           55.99),
                       Product(
                           'assets/seco_blanco.png',
-                          'Vino Gran Blanco Fina Reserva',
+                          'Vino Gran Blanco Fina',
                           'Nota de Cata: Tiene un color amarillo sumamente ligero con tonalidades  verdosas. En nariz, los aromas marcados a fruta blanca y manzana verde, muy herbáceo y mineral que se refleja en boca, lo que nos da un vino ligero, equilibrado y fácil de tomar.',
                           82.99),
                     ];
@@ -124,7 +124,7 @@ class _MainPageState extends State<MainPage>
                           55.99),
                       Product(
                           'assets/pisco_verde_quebranta.png',
-                          'Pisco Colección Privada Mosto Verde Quebranta',
+                          'Pisco Verde Quebranta',
                           'Es el resultado de la interrupción de la fermentación del Mosto de Uva Quebranta. En vista, limpio, transparente, incoloro y brillante. En nariz, se encuentran aromas a frutos secos pero con una ligera nota mineral; en boca muy aterciopelado, dejando un placentero y largo final a frutas secas.',
                           152.99),
                     ];
@@ -145,17 +145,17 @@ class _MainPageState extends State<MainPage>
                     products = [
                       Product(
                           'assets/Whisky-Johnnie-Walkerl.png',
-                          'Whisky JOHNNIE WALKER Red Label',
+                          'Whisky JW Red Label',
                           'Johnnie Walker Red Label se destaca por su carácter e intensidad, por sus notas especiadas que estallan con sabores vibrantes y ahumados. Es una mezcla que combina whiskies ligeros de la costa este escocesa y whiskies ahumados y oscuros de la costa oeste, creando una extraordinaria profundidad de sabor.',
                           66.99),
                       Product(
                           'assets/Black-label.png',
-                          'Whisky JOHNNIE WALKER Black Label',
+                          'Whisky JW Black Label',
                           'Creado usando sólo whiskies con un mínimo de 12 años de añejamiento de los 4 rincones de Escocia, Johnnie Walker Black Label tiene un inconfundible carácter profundo, suave y complejo.',
                           55.99),
                       Product(
                           'assets/Whisky-Something-Special.png',
-                          'Whisky SOMETHING SPECIAL Clásico',
+                          'Whisky Something Special',
                           'se caracteriza por su aroma ligeramente ahumado y afrutado que crea un perfecto balance y equilibrio. Su sabor es suave, tiene notas de malta dulce y chocolate amargo, con un final seco y sensaciones de humo, cuero y especias.',
                           152.99),
                     ];
