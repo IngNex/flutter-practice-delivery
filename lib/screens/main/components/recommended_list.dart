@@ -6,16 +6,42 @@ import 'package:flutter/material.dart';
 
 class RecommendedList extends StatelessWidget {
   List<Product> products = [
-    Product('assets/bag_1.png', 'Bag', 'Beautiful bag', 2.33),
-    Product('assets/cap_5.png', 'Cap', 'Cap with beautiful design', 10),
-    Product('assets/jeans_1.png', 'Jeans', 'Jeans for you', 20),
-    Product('assets/womanshoe_3.png', 'Woman Shoes',
-        'Shoes with special discount', 30),
-    Product('assets/bag_10.png', 'Bag Express', 'Bag for your shops', 40),
-    Product('assets/jeans_3.png', 'Jeans', 'Beautiful Jeans', 102.33),
-    Product('assets/ring_1.png', 'Silver Ring', 'Description', 52.33),
-    Product('assets/shoeman_7.png', 'Shoes', 'Description', 62.33),
-    Product('assets/headphone_9.png', 'Headphones', 'Description', 72.33),
+    Product('assets/rose_tuyo.png', 'Vino Rosé Tuyo',
+        'Vino ligeramente gasificado.', 2.33),
+    Product('assets/gran_rose.png', 'Vino Rosé Gran Selección',
+        'Rojo cereza con ribetes violáceo.', 10),
+    Product('assets/vino_malbec_merlot.png', 'Vino Gran Tinto Malbec',
+        'Rojo cereza cubierto con tonalidades frambuesa.', 20),
+    Product(
+        'assets/gran_tinto_fr.png',
+        'Vino Gran Tinto',
+        'En boca es fresco y de cuerpo medio, con un suave sabor mineral, taninos amables',
+        30),
+    Product(
+        'assets/vino_vittoria_syrah.png',
+        'Vino Vittoria Syrah',
+        'Posee un producto color rojo violáceo. En nariz presenta delicadas notas florales como violetas.',
+        40),
+    Product(
+        'assets/pisco_verde_italia.png',
+        'Pisco Mosto Verde Colección Privada Italia',
+        'Es el resultado de la interrupción de la fermentación del Mosto de Uva Italia.',
+        102.33),
+    Product(
+        'assets/espumante_muscat_rosso.png',
+        'Espumante Vittoria Muscat Rosso',
+        'Espumante semi seco. Posee un atractivo color rosado. Con finas burbujas producto de la segunda fermentación (método Charmat).',
+        52.33),
+    Product(
+        'assets/vino_vittoria_sauvignon_blanc.png',
+        'Vino Vittoria Sauvignon Blanc',
+        'Se caracteriza por tener un color amarillo pálido con tonalidades verdosas, aromas complejos y elegantes.',
+        62.33),
+    Product(
+        'assets/pisco_la_botija_quebranta.png',
+        'Pisco La Botija Quebranta',
+        'La fineza de este Pisco es el resultado de una rigurosa selección de las uvas y de una vinificación que combina tradición y alta tecnología.',
+        72.33),
   ];
 
   @override
