@@ -72,7 +72,7 @@ class _WalletPageState extends State<WalletPage> with TickerProviderStateMixin {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
                         Text(
-                          'Payment',
+                          'Pago',
                           style: TextStyle(
                             color: darkGrey,
                             fontSize: 22,
@@ -83,7 +83,7 @@ class _WalletPageState extends State<WalletPage> with TickerProviderStateMixin {
                       ],
                     ),
                   ),
-                  Text('Current account balance'),
+                  Text('Saldo de la cuenta corriente'),
                   Padding(
                     padding: const EdgeInsets.all(16.0),
                     child: Row(
@@ -99,7 +99,7 @@ class _WalletPageState extends State<WalletPage> with TickerProviderStateMixin {
                           ),
                         ),
                         SizedBox(width: 8.0),
-                        Text('54.24',
+                        Text('85.24',
                             style: TextStyle(
                                 color: Colors.black,
                                 fontSize: 48,
@@ -180,7 +180,7 @@ class _WalletPageState extends State<WalletPage> with TickerProviderStateMixin {
                   ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: Text('Quick Money Request'),
+                    child: Text('Solicitud de dinero rápido'),
                   ),
                   Flexible(
                       child: Center(
@@ -274,7 +274,7 @@ class _WalletPageState extends State<WalletPage> with TickerProviderStateMixin {
                   )),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: Text('Hot Deals'),
+                    child: Text('Las mejores ofertas'),
                   ),
                   Flexible(
                     child: Container(
@@ -283,7 +283,7 @@ class _WalletPageState extends State<WalletPage> with TickerProviderStateMixin {
                       padding: const EdgeInsets.symmetric(vertical: 16.0),
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
-                        itemCount: 10,
+                        itemCount: 6,
                         itemBuilder: (_, index) => Container(
                           margin: const EdgeInsets.symmetric(horizontal: 8.0),
                           padding: const EdgeInsets.all(16.0),
@@ -304,7 +304,7 @@ class _WalletPageState extends State<WalletPage> with TickerProviderStateMixin {
                               Padding(
                                 padding:
                                     const EdgeInsets.symmetric(vertical: 8.0),
-                                child: Text('Dicount Voucher',
+                                child: Text('Vale de descuento',
                                     style: TextStyle(
                                         color: Colors.grey,
                                         fontSize: 16.0,
@@ -313,7 +313,8 @@ class _WalletPageState extends State<WalletPage> with TickerProviderStateMixin {
                               Padding(
                                 padding:
                                     const EdgeInsets.symmetric(vertical: 8.0),
-                                child: Text('10% off on any pizzahut products',
+                                child: Text(
+                                    '10% de descuento en cualquier producto pizzahut',
                                     style: TextStyle(
                                       color: Colors.grey,
                                       fontSize: 10.0,
