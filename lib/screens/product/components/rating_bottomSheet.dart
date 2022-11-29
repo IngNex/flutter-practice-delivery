@@ -1,15 +1,20 @@
 import 'package:ecommerce_int2/app_properties.dart';
+import 'package:ecommerce_int2/models/product.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 
 class RatingBottomSheet extends StatefulWidget {
+  final Product product;
+
+  const RatingBottomSheet({super.key, required this.product});
+
   @override
   _RatingBottomSheetState createState() => _RatingBottomSheetState();
 }
 
 class _RatingBottomSheetState extends State<RatingBottomSheet> {
   double rating = 0.0;
-  List<int> ratings = [2, 1, 5, 2, 4, 3];
+  List<int> ratings = [4, 3, 5, 3, 4, 5];
 
   @override
   Widget build(BuildContext context) {
@@ -32,13 +37,13 @@ class _RatingBottomSheetState extends State<RatingBottomSheet> {
                     shape: BoxShape.circle,
                     boxShadow: shadow,
                     border: Border.all(width: 8.0, color: Colors.white)),
-                child: Image.asset('assets/headphones.png'),
+                child: Image.asset(widget.product.image),
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(
                     horizontal: 72.0, vertical: 16.0),
                 child: Text(
-                  'Boat Rockerz 350 On-Ear Bluetooth Headphones',
+                  widget.product.name,
                   style: TextStyle(fontWeight: FontWeight.bold),
                   textAlign: TextAlign.center,
                 ),
@@ -54,7 +59,7 @@ class _RatingBottomSheetState extends State<RatingBottomSheet> {
                 Padding(
                   padding: const EdgeInsets.only(right: 16.0),
                   child: Text(
-                    '4.8',
+                    '4.2',
                     style: TextStyle(fontSize: 48),
                   ),
                 ),
@@ -66,7 +71,7 @@ class _RatingBottomSheetState extends State<RatingBottomSheet> {
                       ignoreGestures: true,
                       itemSize: 20,
                       allowHalfRating: true,
-                      initialRating: 1,
+                      initialRating: 4,
                       itemPadding: EdgeInsets.symmetric(horizontal: 4.0),
                       ratingWidget: RatingWidget(
                         empty: Icon(Icons.favorite_border,
@@ -97,7 +102,7 @@ class _RatingBottomSheetState extends State<RatingBottomSheet> {
           Padding(
             padding: const EdgeInsets.only(bottom: 16.0),
             child: Align(
-                alignment: Alignment(-1, 0), child: Text('Recent Reviews')),
+                alignment: Alignment(-1, 0), child: Text('Reseñas recientes')),
           ),
           Column(
             children: <Widget>[
@@ -115,8 +120,7 @@ class _RatingBottomSheetState extends State<RatingBottomSheet> {
                             padding: const EdgeInsets.only(right: 16.0),
                             child: CircleAvatar(
                               maxRadius: 14,
-                              backgroundImage:
-                                  AssetImage('assets/background.jpg'),
+                              backgroundImage: AssetImage('assets/user.png'),
                             ),
                           ),
                           Expanded(
@@ -129,12 +133,12 @@ class _RatingBottomSheetState extends State<RatingBottomSheet> {
                                       MainAxisAlignment.spaceBetween,
                                   children: <Widget>[
                                     Text(
-                                      'Billy Holand',
+                                      'Jorge Gates',
                                       style: TextStyle(
                                           fontWeight: FontWeight.bold),
                                     ),
                                     Text(
-                                      '10 am, Via iOS',
+                                      '9 am, Via iOS',
                                       style: TextStyle(
                                           color: Colors.grey, fontSize: 10.0),
                                     )
@@ -169,7 +173,7 @@ class _RatingBottomSheetState extends State<RatingBottomSheet> {
                                   ),
                                 ),
                                 Text(
-                                  'Not as I expected! ... I`m really sad',
+                                  '¡Si como esperaba! ... estoy muy Feliz',
                                   style: TextStyle(
                                     color: Colors.grey,
                                   ),
@@ -182,13 +186,13 @@ class _RatingBottomSheetState extends State<RatingBottomSheet> {
                                         MainAxisAlignment.spaceBetween,
                                     children: <Widget>[
                                       Text(
-                                        '21 likes',
+                                        '21 Like',
                                         style: TextStyle(
                                             color: Colors.grey[400],
                                             fontSize: 10.0),
                                       ),
                                       Text(
-                                        '1 Comment',
+                                        '1 Comentario',
                                         style: TextStyle(
                                             color: Colors.blue,
                                             fontWeight: FontWeight.bold,
