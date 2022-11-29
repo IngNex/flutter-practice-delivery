@@ -33,7 +33,7 @@ class ProductList extends StatelessWidget {
           builder: (context, config) {
             if (config!.itemCount! > 20) {
               print(
-                  "The itemCount is too big, we suggest use FractionPaginationBuilder instead of DotSwiperPaginationBuilder in this sitituation");
+                  "El itemCount es demasiado grande, sugerimos usar FractionPaginationBuilder en lugar de DotSwiperPaginationBuilder en esta situación");
             }
             Color activeColor = darkYellow;
             Color color = Colors.grey.withOpacity(.3);
@@ -144,7 +144,8 @@ class ProductCard extends StatelessWidget {
                       alignment: Alignment.topRight,
                       child: Container(
                         margin: const EdgeInsets.only(bottom: 12.0),
-                        padding: const EdgeInsets.fromLTRB(8.0, 4.0, 12.0, 4.0),
+                        padding:
+                            const EdgeInsets.fromLTRB(12.0, 5.0, 12.0, 5.0),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.only(
                               topLeft: Radius.circular(10),
@@ -172,6 +173,10 @@ class ProductCard extends StatelessWidget {
                 product.image,
                 height: height / 1.7,
                 width: width / 1.4,
+                /*
+                height: height / 1.7,
+                width: width / 1.4,
+                 */
                 fit: BoxFit.contain,
               ),
             ),
