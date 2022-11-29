@@ -179,7 +179,7 @@ class _IntroPageState extends State<IntroPage> {
                           opacity: pageIndex != 2 ? 1.0 : 0.0,
                           child: TextButton(
                             child: Text(
-                              'PASAR',
+                              'SALTAR',
                               style: TextStyle(
                                   color: Colors.black,
                                   fontWeight: FontWeight.bold,
