@@ -10,28 +10,28 @@ class FaqPage extends StatefulWidget {
 class _FaqPageState extends State<FaqPage> {
   List<Panel> panels = [
     Panel(
-        'HOW CAN I CHANGE MY SHIPPING ADDRESS?',
-        'By default, the last used shipping address will be saved intoto your Sample Store account. When you are checkingout your order, the default shipping address will be displayedand you have the option to amend it if you need to.',
+        '¿CÓMO PUEDO CAMBIAR MI DIRECCIÓN DE ENVÍO?',
+        'De manera predeterminada, la última dirección de envío utilizada se guardará en su cuenta de la Tienda de muestra. Cuando esté pagando su pedido, se mostrará la dirección de envío predeterminada y tiene la opción de modificarla si es necesario.',
         false),
     Panel(
-        'HOW MANY FREE SAMPLES CAN I REDEEM?',
-        'Due to the limited quantity, each member`s account is only entitled to 1 unique free sample. You can check out up to 4 free samples in each checkout.',
+        '¿CUÁNTAS MUESTRAS GRATIS PUEDO CANJEAR?',
+        'Debido a la cantidad limitada, la cuenta de cada miembro solo tiene derecho a 1 muestra gratuita única. Puede consultar hasta 4 muestras gratuitas en cada pago.',
         false),
     Panel(
-        'HOW CAN I TRACK MY ORDERS & PAYMENT?',
-        'By default, the last used shipping address will be saved intoto your Sample Store account. When you are checkingout your order, the default shipping address will be displayedand you have the option to amend it if you need to.',
+        '¿CÓMO PUEDO SEGUIR MIS PEDIDOS Y PAGOS?',
+        'De forma predeterminada, la última dirección de envío utilizada se guardará en su cuenta de la Tienda de muestras. Cuando esté pagando su pedido, se mostrará la dirección de envío predeterminada y tendrá la opción de modificarla si es necesario.',
         false),
     Panel(
-        'HOW LONG WILL IT TAKE FOR MY ORDER TO ARRIVE AFTER I MAKE PAYMENT?',
-        'By default, the last used shipping address will be saved intoto your Sample Store account. When you are checkingout your order, the default shipping address will be displayedand you have the option to amend it if you need to.',
+        '¿CUÁNTO TIEMPO TARDARÁ EN LLEGAR MI PEDIDO DESPUÉS DE REALIZAR EL PAGO?',
+        'De manera predeterminada, la última dirección de envío utilizada se guardará en su cuenta de la Tienda de muestra. Cuando esté pagando su pedido, se mostrará la dirección de envío predeterminada y tiene la opción de modificarla si es necesario.',
         false),
     Panel(
-        'HOW DO YOU SHIP MY ORDERS?',
-        'By default, the last used shipping address will be saved intoto your Sample Store account. When you are checkingout your order, the default shipping address will be displayedand you have the option to amend it if you need to.',
+        '¿CÓMO ENVÍAN MIS PEDIDOS?',
+        'De manera predeterminada, la última dirección de envío utilizada se guardará en su cuenta de la Tienda de muestra. Cuando esté pagando su pedido, se mostrará la dirección de envío predeterminada y tiene la opción de modificarla si es necesario.',
         false),
     Panel(
-        'HOW DO I MAKE PAYMENTS USING PAYPAL? HOW DOES IT WORK?',
-        'By default, the last used shipping address will be saved intoto your Sample Store account. When you are checkingout your order, the default shipping address will be displayedand you have the option to amend it if you need to.',
+        '¿CÓMO REALIZO PAGOS UTILIZANDO YAPE? ¿COMO FUNCIONA?',
+        'De manera predeterminada, la última dirección de envío utilizada se guardará en su cuenta de la Tienda de muestra. Cuando esté pagando su pedido, se mostrará la dirección de envío predeterminada y tiene la opción de modificarla si es necesario.',
         false)
   ];
 
@@ -54,39 +54,42 @@ class _FaqPageState extends State<FaqPage> {
       body: SafeArea(
         bottom: true,
         child: Padding(
-            padding: const EdgeInsets.only(top: 24.0),
-            child: ListView(
-              children: <Widget>[
-                Padding(
-                  padding: const EdgeInsets.only(left:24.0,right:24.0,bottom: 16.0),
-                  child: Text(
-                    'FAQ',
-                    style: TextStyle(
-                        color: Colors.black,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 18.0),
-                  ),
-                ),... panels.map((panel)=>ExpansionTile(
-                      title: Text(
-                        panel.title,
-                        style: TextStyle(
-                            fontSize: 14,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.grey[600]),
-                      ),
-
-                      children: [Container(
-                        padding: EdgeInsets.all(16.0),
-                          color: Color(0xffFAF1E2),
-                          child: Text(
-                              panel.content,
-                              style:
-                              TextStyle(color: Colors.grey, fontSize: 12)))])).toList(),
-
-              ],
-            ),
+          padding: const EdgeInsets.only(top: 24.0),
+          child: ListView(
+            children: <Widget>[
+              Padding(
+                padding: const EdgeInsets.only(
+                    left: 24.0, right: 24.0, bottom: 16.0),
+                child: Text(
+                  'FAQ',
+                  style: TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 18.0),
+                ),
+              ),
+              ...panels
+                  .map((panel) => ExpansionTile(
+                          title: Text(
+                            panel.title,
+                            style: TextStyle(
+                                fontSize: 14,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.grey[600]),
+                          ),
+                          children: [
+                            Container(
+                                padding: EdgeInsets.all(16.0),
+                                color: Color(0xffFAF1E2),
+                                child: Text(panel.content,
+                                    style: TextStyle(
+                                        color: Colors.grey, fontSize: 12)))
+                          ]))
+                  .toList(),
+            ],
           ),
         ),
+      ),
     );
   }
 }

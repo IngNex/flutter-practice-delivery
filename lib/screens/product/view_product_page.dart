@@ -85,7 +85,7 @@ class _ViewProductPageState extends State<ViewProductPage> {
             )
           ],
           title: Text(
-            'Ver Licor',
+            'Detalles de Licor',
             style: const TextStyle(
                 color: darkGrey,
                 fontWeight: FontWeight.w500,
@@ -118,13 +118,13 @@ class _ViewProductPageState extends State<ViewProductPage> {
                     RawMaterialButton(
                       onPressed: () {
                         showModalBottomSheet(
-                          context: context,
-                          builder: (context) {
-                            return RatingBottomSheet();
-                          },
-                          //elevation: 0,
-                          //backgroundColor: Colors.transparent
-                        );
+                            context: context,
+                            builder: (_) => RatingBottomSheet(
+                                  product: widget.product,
+                                )
+                            //elevation: 0,
+                            //backgroundColor: Colors.transparent
+                            );
                       },
                       constraints:
                           const BoxConstraints(minWidth: 45, minHeight: 45),

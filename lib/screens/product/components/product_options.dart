@@ -62,7 +62,7 @@ class ProductOption extends StatelessWidget {
                       padding: EdgeInsets.symmetric(vertical: 16.0),
                       child: Center(
                         child: Text(
-                          'Comprar',
+                          'Compras',
                           style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,

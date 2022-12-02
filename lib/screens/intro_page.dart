@@ -37,8 +37,8 @@ class _IntroPageState extends State<IntroPage> {
                     Center(
                       child: Image.asset(
                         'assets/screenOne.png',
-                        height: 200,
-                        width: 200,
+                        height: 250,
+                        width: 250,
                       ),
                     ),
                     Padding(
@@ -71,8 +71,8 @@ class _IntroPageState extends State<IntroPage> {
                     Center(
                       child: Image.asset(
                         'assets/screenTwo.png',
-                        height: 200,
-                        width: 200,
+                        height: 250,
+                        width: 250,
                       ),
                     ),
                     Padding(
@@ -105,8 +105,8 @@ class _IntroPageState extends State<IntroPage> {
                     Center(
                       child: Image.asset(
                         'assets/screenThree.png',
-                        height: 200,
-                        width: 200,
+                        height: 250,
+                        width: 250,
                       ),
                     ),
                     Padding(
@@ -179,7 +179,7 @@ class _IntroPageState extends State<IntroPage> {
                           opacity: pageIndex != 2 ? 1.0 : 0.0,
                           child: TextButton(
                             child: Text(
-                              'PASAR',
+                              'SALTAR',
                               style: TextStyle(
                                   color: Colors.black,
                                   fontWeight: FontWeight.bold,
