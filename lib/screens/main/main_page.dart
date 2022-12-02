@@ -177,7 +177,7 @@ class _MainPageState extends State<MainPage>
         Tab(text: 'Vinos'),
         Tab(text: 'Dodka'),
         Tab(text: 'Ron'),
-        Tab(text: 'Cervezas'),
+        Tab(text: 'Whisky'),
       ],
       labelStyle: TextStyle(fontSize: 16.0),
       unselectedLabelStyle: TextStyle(
