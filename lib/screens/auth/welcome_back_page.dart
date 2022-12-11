@@ -19,7 +19,7 @@ class _WelcomeBackPageState extends State<WelcomeBackPage> {
       'Bienvendio a JanioStore,',
       style: TextStyle(
           color: Colors.white,
-          fontSize: 34.0,
+          fontSize: 38.0,
           fontWeight: FontWeight.bold,
           shadows: [
             BoxShadow(
@@ -33,7 +33,7 @@ class _WelcomeBackPageState extends State<WelcomeBackPage> {
     Widget subTitle = Padding(
         padding: const EdgeInsets.only(right: 56.0),
         child: Text(
-          'Inicie sesión en su cuenta usando\nNúmero de móvil',
+          'Inicie sesión en su cuenta usando\nCorreo electronico',
           style: TextStyle(
             color: Colors.white,
             fontSize: 16.0,
@@ -50,7 +50,7 @@ class _WelcomeBackPageState extends State<WelcomeBackPage> {
         },
         child: Container(
           width: MediaQuery.of(context).size.width / 2,
-          height: 80,
+          height: 70,
           child: Center(
               child: new Text("Ingresar",
                   style: const TextStyle(
@@ -169,7 +169,7 @@ class _WelcomeBackPageState extends State<WelcomeBackPage> {
                 welcomeBack,
                 Spacer(),
                 subTitle,
-                Spacer(flex: 2),
+                Spacer(),
                 loginForm,
                 Spacer(flex: 2),
                 forgotPassword

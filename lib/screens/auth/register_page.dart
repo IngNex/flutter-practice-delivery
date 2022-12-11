@@ -53,7 +53,7 @@ class _RegisterPageState extends State<RegisterPage> {
         },
         child: Container(
           width: MediaQuery.of(context).size.width / 2,
-          height: 80,
+          height: 60,
           child: Center(
               child: new Text("Registrar",
                   style: const TextStyle(
@@ -76,11 +76,11 @@ class _RegisterPageState extends State<RegisterPage> {
     );
 
     Widget registerForm = Container(
-      height: 300,
+      height: 280,
       child: Stack(
         children: <Widget>[
           Container(
-            height: 220,
+            height: 210,
             width: MediaQuery.of(context).size.width,
             padding: const EdgeInsets.only(left: 32.0, right: 12.0),
             decoration: BoxDecoration(
@@ -122,7 +122,8 @@ class _RegisterPageState extends State<RegisterPage> {
       ),
     );
 
-    Widget socialRegister = Column(
+    Widget socialRegister = Row(
+      mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
         Text(
           'Puedes iniciar sesión con',
@@ -133,12 +134,12 @@ class _RegisterPageState extends State<RegisterPage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             IconButton(
-              icon: Icon(Icons.find_replace),
+              icon: Icon(Icons.email),
               onPressed: () {},
-              color: Colors.white,
+              color: Colors.red,
             ),
             IconButton(
-                icon: Icon(Icons.find_replace),
+                icon: Icon(Icons.facebook),
                 onPressed: () {},
                 color: Colors.white),
           ],
@@ -166,15 +167,15 @@ class _RegisterPageState extends State<RegisterPage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
-                Spacer(flex: 3),
+                Spacer(flex: 2),
                 title,
-                Spacer(),
+                Spacer(flex: 2),
                 subTitle,
-                Spacer(flex: 2),
+                Spacer(),
                 registerForm,
-                Spacer(flex: 2),
+                Spacer(),
                 Padding(
-                    padding: EdgeInsets.only(bottom: 20), child: socialRegister)
+                    padding: EdgeInsets.only(bottom: 2), child: socialRegister)
               ],
             ),
           ),
